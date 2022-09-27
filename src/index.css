@@ -1,9 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-dark: #023047;
+  --main-med: #219ebc;
+  --main-light: #8ecae6;
+  --accent-med: #fb8500;
+  --acent-light: #ffb703;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 10px;
+  background-color: var(--main-med);
 }
 
 .mobile-menu-icon {
   width: 35px;
+}
+
+.nav-secondary {
+  display: flex;
+  list-style: none;
+  width: 100%;
 }

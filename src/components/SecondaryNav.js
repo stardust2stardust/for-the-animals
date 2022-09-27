@@ -1,7 +1,7 @@
 const SecondaryNav = () => {
   return (
     <div>
-      <ul>
+      <ul className="nav-secondary">
         <li>Events</li>
         <li>News</li>
         <li>Legislation</li>
