@@ -1,6 +1,6 @@
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
@@ -23,8 +23,13 @@
   width: 35px;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
 .nav-secondary {
   display: flex;
+  justify-content: flex-start;
   list-style: none;
   width: 100%;
 }
