@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MainSection from "./MainSection";
+import MainSectionEvents from "./MainSectionEvents";
 import axios from "axios";
 
 const Main = () => {
@@ -19,11 +19,29 @@ const Main = () => {
   // });
 
   return (
-    <main>
-      <MainSection />
-      <MainSection />
-      <MainSection />
-      <MainSection />
+    <main className="main-container">
+      <div className="events-container">
+        <h2 className="main-section-title">Events</h2>
+        <div className="main-grid">
+          {events.map((event) => (
+            <MainSectionEvents
+              key={event.id}
+              event={event}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="news-container">
+        <h2 className="main-section-title">News</h2>
+        <div className="main-grid">
+          {events.map((event) => (
+            <MainSectionEvents
+              key={event.id}
+              event={event}
+            />
+          ))}
+        </div>
+      </div>
     </main>
   );
 };

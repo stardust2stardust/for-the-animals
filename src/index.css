@@ -83,3 +83,27 @@ ul {
   background-color: rgba(2, 48, 71, 0.6);
   padding: 20px;
 }
+
+/* - - - - MAIN SECTION - - - - */
+
+.main-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-section-title {
+  padding: 10px;
+  text-align: center;
+}
+
+.main-child-event {
+  border: 1px solid var(--main-dark);
+  padding: 10px;
+}
