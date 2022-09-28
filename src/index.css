@@ -7,8 +7,10 @@
   --main-dark: #023047;
   --main-med: #219ebc;
   --main-light: #8ecae6;
+  --accent-dark: #fb5400;
   --accent-med: #fb8500;
-  --acent-light: #ffb703;
+  --accent-light: #ffb703;
+  --accent-lighter: #ffd700;
 }
 
 .header {
@@ -22,6 +24,8 @@
 .mobile-menu-icon {
   width: 35px;
 }
+
+/* - - - - NAV - - - - */
 
 ul {
   padding-inline-start: 0px;
@@ -41,21 +45,41 @@ ul {
 }
 
 .nav-events {
-  background-color: var(--accent-med);
+  background-color: var(--accent-dark);
 }
 
 .nav-news {
-  background-color: var(--acent-light);
+  background-color: var(--accent-med);
 }
 
 .nav-legislation {
-  background-color: gold;
+  background-color: var(--accent-light);
 }
 
 .nav-help {
-  background-color: var(--main-light);
+  background-color: var(--accent-lighter);
 }
 
-.img-hero {
-  width: 100vw;
+/* - - - HERO - - - -  */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  background-image: url("./images/pig-ben-mater.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-light);
+  background-color: rgba(2, 48, 71, 0.6);
+  padding: 20px;
 }

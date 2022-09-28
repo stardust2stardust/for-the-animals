@@ -1,13 +1,18 @@
-import menuIcon from "../images/ben-mater-ek56eeYMKoQ-unsplash.jpg";
+// import menuIcon from "../images/pig-ben-mater.png";
 
 const Hero = () => {
   return (
     <div className="hero">
-      <img
+      <div className="hero-text">
+        <h1>For the Animals Project</h1>
+        <h2>Southwestern Pennsylvania</h2>
+        <h3>Helping People Help Animals</h3>
+        {/* <img
         className="img-hero"
         src={menuIcon}
         alt="woman petting pig"
-      />
+      /> */}
+      </div>
     </div>
   );
 };
