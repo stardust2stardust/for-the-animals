@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MainSectionEvents from "./MainSectionEvents";
 import axios from "axios";
+import image1 from "../images/guillermo-latorre-ZwtsGgJxpXA-unsplash.jpg";
 
 const Main = () => {
   const [events, setEvents] = useState([]);
@@ -20,7 +21,13 @@ const Main = () => {
 
   return (
     <main className="main-container">
-      <div className="events-container">
+      <img
+        className="square-image"
+        src={image1}
+        alt="img"
+      />
+
+      <div className="events-container section-container">
         <h2 className="main-section-title">Events</h2>
         <div className="main-grid">
           {events.map((event) => (
@@ -31,7 +38,7 @@ const Main = () => {
           ))}
         </div>
       </div>
-      <div className="news-container">
+      <div className="news-container section-container">
         <h2 className="main-section-title">News</h2>
         <div className="main-grid">
           {events.map((event) => (
