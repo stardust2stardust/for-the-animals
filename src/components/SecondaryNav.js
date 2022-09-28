@@ -2,10 +2,10 @@ const SecondaryNav = () => {
   return (
     <div>
       <ul className="nav-secondary">
-        <li>Events</li>
-        <li>News</li>
-        <li>Legislation</li>
-        <li>Help Out</li>
+        <li className="nav-item nav-events">Events</li>
+        <li className="nav-item nav-news">News</li>
+        <li className="nav-item nav-legislation">Legislation</li>
+        <li className="nav-item nav-help">Help Out</li>
       </ul>
     </div>
   );

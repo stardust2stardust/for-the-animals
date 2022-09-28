@@ -28,3 +28,29 @@
   list-style: none;
   width: 100%;
 }
+
+.nav-item {
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+
+.nav-events {
+  background-color: var(--accent-med);
+}
+
+.nav-news {
+  background-color: var(--acent-light);
+}
+
+.nav-legislation {
+  background-color: gold;
+}
+
+.nav-help {
+  background-color: var(--main-light);
+}
+
+.img-hero {
+  width: 100vw;
+}
