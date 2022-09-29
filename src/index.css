@@ -12,6 +12,10 @@
   --accent-med: #fb8500;
   --accent-light: #ffb703;
   --accent-lighter: #ffd700;
+
+  --font-heading: "Questrial", sans-serif;
+  --font-subheading: "Sorts Mill Goudy", serif;
+  --font-body: "Oxygen", sans-serif;
 }
 
 .header {
@@ -20,10 +24,13 @@
   align-items: center;
   padding: 20px 10px;
   background-color: var(--main-med);
+  font-family: var(--font-heading);
+  color: var(--accent-lighter);
 }
 
 .mobile-menu-icon {
   width: 35px;
+  color: var(--accent-lighter);
 }
 
 /* - - - - NAV - - - - */
@@ -43,6 +50,8 @@ ul {
   padding: 5px;
   width: 25%;
   text-align: center;
+  font-family: var(--font-body);
+  letter-spacing: 0.1rem;
 }
 
 .nav-events {
@@ -83,6 +92,8 @@ ul {
   color: var(--main-light);
   background-color: rgba(2, 48, 71, 0.6);
   padding: 20px;
+  font-family: var(--font-heading);
+  border-radius: 5px 5px 0 0;
 }
 
 /* - - - - MAIN SECTION - - - - */
@@ -125,6 +136,13 @@ ul {
   background-color: var(--main-dark);
   color: var(--main-light);
   border-radius: 0 0 5px 5px;
+  font-family: var(--font-body);
+  padding: 10px;
+}
+
+.category-text > h3 {
+  font-family: var(--font-heading);
+  padding: 0px 0 5px 0;
 }
 
 .bird-pic {
@@ -166,11 +184,13 @@ ul {
 
 .mission-container > h3 {
   font-size: 1.5rem;
+  font-family: var(--font-heading);
 }
 
 .mission-container > p {
   font-size: 1.2rem;
   padding-top: 10px;
+  font-family: var(--font-body);
 }
 
 /* .small-image {

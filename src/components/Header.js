@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header">
       <MobileMenuIcon />
-      <h1>Logo here</h1>
+      <h1>For the Animals</h1>
     </div>
   );
 };
