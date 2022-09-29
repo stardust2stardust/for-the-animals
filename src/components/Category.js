@@ -19,8 +19,10 @@ const Category = ({ category }) => {
 
   return (
     <div className={animalImgClass}>
-      <h3>{categoryName}</h3>
-      <p>{categoryDescription}</p>
+      <div className="category-text">
+        <h3>{categoryName}</h3>
+        <p>{categoryDescription}</p>
+      </div>
     </div>
   );
 };
