@@ -1,16 +1,26 @@
-const Category = (category) => {
-  let categoryName = category;
-  let animalPic;
+const Category = ({ category }) => {
+  let categoryName = category.toUpperCase();
+  let animalImgClass = "home-category-box";
   let categoryDescription;
-  if (categoryName === "events") {
-    animalPic = "bird home-category-box";
-    categoryDescription = "See all upcoming events. ";
+  if (category === "events") {
+    categoryDescription = "See all upcoming events.";
+    animalImgClass += " bird-pic";
+  } else if (category === "news") {
+    categoryDescription = "Keep up on the latest animal-related news...";
+    animalImgClass += " cat-paw-pic";
+  } else if (category === "legislation") {
+    categoryDescription = "Stay informed on the current laws being discussed";
+    animalImgClass += " pigs-pic";
+  } else if (category === "help") {
+    categoryDescription =
+      "Want to volunteer to help animals or looking to donate money or items?";
+    animalImgClass += " pig-human-pic";
   }
 
   return (
-    <div>
+    <div className={animalImgClass}>
       <h3>{categoryName}</h3>
-      <p></p>
+      <p>{categoryDescription}</p>
     </div>
   );
 };

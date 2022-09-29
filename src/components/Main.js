@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import MainSectionEvents from "./MainSectionEvents";
 import axios from "axios";
-import image1 from "../images/pig-latorre.png";
-import Category from "./Category";
+import Categories from "./Categories";
 import MissionStatement from "./MissionStatement";
 import SignUpForm from "./SignupForm";
 
@@ -20,10 +18,7 @@ const Main = () => {
 
   return (
     <main className="main-container">
-      <Category category="events" />
-      <Category category="news" />
-      <Category category="legislation" />
-      <Category category="help" />
+      <Categories />
       <MissionStatement />
       <SignUpForm />
 
