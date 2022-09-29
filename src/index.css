@@ -89,11 +89,12 @@ ul {
 .main-container {
   margin-top: 20px;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100vw;
   justify-items: center;
 }
 
-.square-image {
+.small-image {
   width: 200px;
 }
 
