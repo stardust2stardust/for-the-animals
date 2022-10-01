@@ -225,12 +225,11 @@ ul {
 }
 
 .image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
 }
 
 .image-medium {
-  height: 175px;
+  height: 150px;
 }
 
 .signup-container {
