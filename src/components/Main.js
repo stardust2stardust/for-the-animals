@@ -1,49 +1,42 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import Categories from "./Categories";
-import MissionStatement from "./MissionStatement";
-import SignUpForm from "./SignupForm";
+import MainHome from "./MainHome";
+import MainEvents from "./MainEvents";
 
-const Main = () => {
-  const [events, setEvents] = useState([]);
+const Main = ({ navClick }) => {
+  console.log("navClick from Main: ", navClick);
 
-  useEffect(() => {
-    console.log("effect");
-    axios.get("http://localhost:3001/events").then((response) => {
-      console.log("promise fulfilled");
-      setEvents(response.data);
-    });
-  }, []);
-  console.log("render", events.length, "events");
+  if (navClick === "Events") {
+    return (
+      <main className="main-container">
+        <MainEvents />
+      </main>
+    );
+  }
+
+  if (navClick === "News") {
+    return (
+      <main className="main-container">
+        <h2>News Section</h2>
+      </main>
+    );
+  }
+
+  if (navClick === "Legislation") {
+    return (
+      <main className="main-container">
+        <h2>Legislation</h2>
+      </main>
+    );
+  }
+
+  if (navClick === "Help") {
+    <main className="main-container">
+      <h2>Looking to Help Out?</h2>
+    </main>;
+  }
 
   return (
     <main className="main-container">
-      <Categories />
-      <MissionStatement />
-      <SignUpForm />
-
-      {/* <div className="events-container section-container">
-        <h2 className="main-section-title">Events</h2>
-        <div className="main-grid">
-          {events.map((event) => (
-            <MainSectionEvents
-              key={event.id}
-              event={event}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="news-container section-container">
-        <h2 className="main-section-title">News</h2>
-        <div className="main-grid">
-          {events.map((event) => (
-            <MainSectionEvents
-              key={event.id}
-              event={event}
-            />
-          ))}
-        </div>
-      </div> */}
+      <MainHome />
     </main>
   );
 };

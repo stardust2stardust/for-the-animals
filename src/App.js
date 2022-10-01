@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import SecondaryNav from "./components/SecondaryNav";
 import Main from "./components/Main";
@@ -5,12 +6,19 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 function App() {
+  const [navSelection, setNavSelection] = useState("");
+
+  const handleNavClick = (e) => {
+    console.log(e.target.innerText);
+    setNavSelection(e.target.innerText);
+  };
+
   return (
     <div>
       <Header />
-      <SecondaryNav />
+      <SecondaryNav navClick={handleNavClick} />
       <Hero />
-      <Main />
+      <Main navClick={navSelection} />
       <Footer />
     </div>
   );
