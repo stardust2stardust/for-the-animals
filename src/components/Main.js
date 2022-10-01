@@ -1,5 +1,8 @@
 import MainHome from "./MainHome";
 import MainEvents from "./MainEvents";
+import MainNews from "./MainNews";
+import MainLegislation from "./MainLegislation";
+import MainHelp from "./MainHelp";
 
 const Main = ({ navClick }) => {
   console.log("navClick from Main: ", navClick);
@@ -15,7 +18,7 @@ const Main = ({ navClick }) => {
   if (navClick === "News") {
     return (
       <main className="main-container">
-        <h2>News Section</h2>
+        <MainNews />
       </main>
     );
   }
@@ -23,14 +26,14 @@ const Main = ({ navClick }) => {
   if (navClick === "Legislation") {
     return (
       <main className="main-container">
-        <h2>Legislation</h2>
+        <MainLegislation />
       </main>
     );
   }
 
   if (navClick === "Help") {
     <main className="main-container">
-      <h2>Looking to Help Out?</h2>
+      <MainHelp />
     </main>;
   }
 
