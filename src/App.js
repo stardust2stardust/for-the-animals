@@ -4,6 +4,8 @@ import SecondaryNav from "./components/SecondaryNav";
 import Main from "./components/Main";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import SignupForm from "./components/SignupForm";
+import ImageContainer from "./components/ImageContainer";
 
 function App() {
   const [navSelection, setNavSelection] = useState("");
@@ -19,6 +21,8 @@ function App() {
       <SecondaryNav navClick={handleNavClick} />
       <Hero />
       <Main navClick={navSelection} />
+      <ImageContainer />
+      <SignupForm />
       <Footer />
     </div>
   );

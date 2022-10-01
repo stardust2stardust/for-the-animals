@@ -16,9 +16,9 @@ const MainEvents = () => {
 
   return (
     <>
-      <div className="">
+      <div className="events-container">
         <h2 className="">Events</h2>
-        <div className="">
+        <div className="events-list">
           {events.map((event) => (
             <MainSectionEvents
               key={event.id}
